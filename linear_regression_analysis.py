@@ -36,7 +36,8 @@ plt.grid()
 plt.title("Residual Plot")
 plt.show()
 
-
+# -----------------
 # Conclusion:
 # The residual plot shows a non-random pattern, indicating possible non-linearity.
 # Polynomial Regression (and regularization methods like ElasticNet) may improve performance.
+# -----------------
