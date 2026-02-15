@@ -10,9 +10,11 @@ This project is a Machine Learning regression model built using Python which can
 - Model Evaluation
 
 ## Library Used
+- numpy
 - pandas
 - matplotlib
 - scikit-learn
+- os
 
 ## Model Used
 - Regression Model (Linear Regression)
