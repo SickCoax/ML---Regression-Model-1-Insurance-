@@ -1,9 +1,9 @@
 import os
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import StandardScaler , OneHotEncoder , PolynomialFeatures
+from sklearn.preprocessing import StandardScaler , OneHotEncoder
 from sklearn.compose import ColumnTransformer
-from sklearn.model_selection import train_test_split , GridSearchCV
+from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score , mean_absolute_error , mean_squared_error
@@ -47,8 +47,7 @@ plt.grid()
 plt.title("Residual Plot")
 plt.show()
 
-# -----------------
+
 # Conclusion:
 # The residual plot shows a non-random pattern, indicating possible non-linearity.
 # Polynomial Regression (and regularization methods like ElasticNet) may improve performance.
-# -----------------
