@@ -1,4 +1,3 @@
-import os
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler , OneHotEncoder , PolynomialFeatures
@@ -9,8 +8,7 @@ from sklearn.linear_model import ElasticNet
 from sklearn.metrics import r2_score , mean_absolute_error , mean_squared_error
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-df1 = pd.read_csv(os.path.join(BASE_DIR, "insurance.csv"))
+df1 = pd.read_csv(r"dataset/insurance.csv")
 x = df1.drop("charges" , axis=1)
 y = df1["charges"]
 
